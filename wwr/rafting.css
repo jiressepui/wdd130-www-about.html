@@ -1,0 +1,190 @@
+/* Define color variables */
+:root {
+    --primary-color: #847c36; /* Blue */
+    --secondary-color: #dddad5; /* Orange */
+    --text-color: #f2ebeb;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #75616b;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #171414;
+    padding: 2rem;
+}
+
+header .logo img {
+    width: 150px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #e9e2e2;
+    font-weight: oo;
+}
+
+nav ul li a:hover {
+    color: var(--secondary-color);
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+}
+
+.hero article {
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: left;
+    width: 8000%;
+    max-width: 600px;
+}
+.hero img of story{
+    width: 15px;
+}
+
+.hero img {
+    float: right;
+    margin-left: 20px;
+    width: 250px;
+    height: auto;
+}
+
+
+.historique {
+    color:#ffffff;
+    padding: 50px 20px;
+    background-color: #887d7d;
+}
+
+.historique h2 {
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+}
+
+/* Adventure Section */
+.adventure {
+    padding: 5px 20px;
+    background-color: #271b1b;
+}
+h1{
+    color: #2f2a2a;
+
+}
+h2{
+    color: #ffffff;
+}
+
+.adventure h2 {
+    font-size: 2cap;
+    color: var(--primary-color);
+}
+
+.adventure-images {
+    display: flex;
+    justify-items: center;
+    height: 10%;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.adventure-images img {
+    width: 30%;
+    max-width: 300px;
+    height: auto;
+}
+
+/* Footer */
+footer {
+    background-color: hwb(0 6% 93%);
+    color: rgb(60, 54, 54);
+    text-align: center;
+    padding: 20px;
+}
+
+footer .social-links a {
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer .social-links img {
+    width: 30px;
+    height: auto;
+}
+
+/* Remove text decoration from social media links */
+footer .social-links a img {
+    border: none;
+}
+
+/* Font styles for headers and paragraphs */
+.h1, h2 {
+    font-family: 'Poppins', sans-serif;
+} 
+
+.adventure-images {
+    display: flex; /* Utilisation de flexbox pour aligner tout horizontalement */
+    justify-content: space-evenly; /* Espacement égal entre les éléments */
+    align-items: center; /* Aligne les éléments verticalement */
+    gap: 20px; /* Espacement entre les éléments */
+}
+
+.adventure-images figure {
+    width: 18%; /* Largeur ajustée pour chaque figure pour qu'elles tiennent sur une seule ligne */
+    margin: 0; /* Supprime les marges inutiles */
+    text-align: center; /* Centre la légende sous l'image */
+}
+
+.adventure-images img {
+    width: 100%; /* Chaque image prend toute la largeur de son conteneur */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(209, 203, 203, 0.1); /* Ombre légère pour les images */
+}
+
+.adventure-images figcaption {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fbfbfb;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%; /* La légende prend toute la largeur de l'image */
+    text-align: center;
+}
